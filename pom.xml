@@ -27,20 +27,6 @@
   <packaging>pom</packaging>
   <name>Portal Extension Tutorial</name>
   <description>Extension Tutorial Root Pom</description>
-  <distributionManagement>
-    <repository>
-      <id>repository.exoplatform.org</id>
-      <url>${exo.releases.repo.url}</url>
-    </repository>
-    <snapshotRepository>
-      <id>repository.exoplatform.org</id>
-      <url>${exo.snapshots.repo.url}</url>
-    </snapshotRepository>
-  </distributionManagement>
-  <properties>
-    <exo.releases.repo.url>http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
-    <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
-  </properties>
   <modules>
     <module>config</module>
     <module>war</module>
