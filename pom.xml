@@ -18,17 +18,15 @@
     Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
---><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-
-	<groupId>org.exoplatform.extension-tutorial</groupId>
-    <version>1.0-SNAPSHOT</version>
-
-	<artifactId>extension-tutorial</artifactId>
-  <name>Portal Extension Tutorial</name>
+  <groupId>org.exoplatform.extension-tutorial</groupId>
+  <artifactId>extension-tutorial</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <name>Portal Extension Tutorial</name>
   <description>Extension Tutorial Root Pom</description>
-
   <distributionManagement>
     <repository>
       <id>repository.exoplatform.org</id>
@@ -39,7 +37,6 @@
       <url>${exo.snapshots.repo.url}</url>
     </snapshotRepository>
   </distributionManagement>
-
   <properties>
     <exo.releases.repo.url>http://repository.exoplatform.org/service/local/staging/deploy/maven2/</exo.releases.repo.url>
     <exo.snapshots.repo.url>http://repository.exoplatform.org/content/repositories/exo-snapshots</exo.snapshots.repo.url>
