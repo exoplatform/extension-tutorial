@@ -21,14 +21,14 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.exoplatform.skin-extension-archetype</groupId>
-    <artifactId>skin-extension-archetype</artifactId>
+    <groupId>org.exoplatform.archetype</groupId>
+    <artifactId>skin-extension</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent> 
   
 
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>skin-extension-archetype-config</artifactId>
+  <artifactId>skin-extension-config</artifactId>
   <name>Skin Extension Archetype Configuration</name>
   <packaging>jar</packaging>
   <description>Skin Extension Archetype Configuration</description>

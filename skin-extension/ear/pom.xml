@@ -21,26 +21,26 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.exoplatform.skin-extension-archetype</groupId>
-    <artifactId>skin-extension-archetype</artifactId>
+    <groupId>org.exoplatform.archetype</groupId>
+    <artifactId>skin-extension</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>skin-extension-archetype-ear</artifactId>
+  <artifactId>skin-extension-ear</artifactId>
   <packaging>ear</packaging>
   <name>Skin Extension Archetype Ear</name>
   <description>Skin Extension Archetype Ear</description>
 
   <dependencies>
     <dependency>
-      <groupId>org.exoplatform.skin-extension-archetype</groupId>
-      <artifactId>skin-extension-archetype-config</artifactId>
+      <groupId>org.exoplatform.archetype</groupId>
+      <artifactId>skin-extension-config</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.exoplatform.skin-extension-archetype</groupId>
-      <artifactId>skin-extension-archetype-war</artifactId>
+      <groupId>org.exoplatform.archetype</groupId>
+      <artifactId>skin-extension-war</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>war</type>
     </dependency>
@@ -55,13 +55,13 @@
         <configuration>
            <modules>
              <jarModule>
-               <groupId>org.exoplatform.skin-extension-archetype</groupId>
-               <artifactId>skin-extension-archetype-config</artifactId>
+               <groupId>org.exoplatform.archetype</groupId>
+               <artifactId>skin-extension-config</artifactId>
                <includeInApplicationXml>true</includeInApplicationXml>
              </jarModule>
              <webModule>
-               <groupId>org.exoplatform.skin-extension-archetype</groupId>
-               <artifactId>skin-extension-archetype-war</artifactId>
+               <groupId>org.exoplatform.archetype</groupId>
+               <artifactId>skin-extension-war</artifactId>
                <contextRoot>my-skin-extension</contextRoot>
              </webModule>
           </modules>
