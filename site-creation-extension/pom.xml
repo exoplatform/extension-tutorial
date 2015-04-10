@@ -46,5 +46,6 @@
   <modules>
         <module>config</module>
         <module>war</module>
+        <module>addon</module>
   </modules>
 </project>
