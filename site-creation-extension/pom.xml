@@ -46,6 +46,5 @@
   <modules>
         <module>config</module>
         <module>war</module>
-        <module>ear</module>
   </modules>
 </project>
