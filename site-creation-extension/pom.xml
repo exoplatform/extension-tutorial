@@ -30,6 +30,19 @@
   <packaging>pom</packaging>
   <description>Create Site Extension Archetype</description>
 
+  <dependencyManagement>
+    <dependencies>
+      <!-- Import versions from platform project -->
+      <dependency>
+        <groupId>org.exoplatform.platform</groupId>
+        <artifactId>platform</artifactId>
+        <version>4.1.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <modules>
         <module>config</module>
         <module>war</module>
