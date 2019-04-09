@@ -1,7 +1,7 @@
 <assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
-  <id>site-creation-extension-addon</id>
+  <id>site-creation-extension-packaging</id>
   <formats>
     <format>zip</format>
   </formats>
@@ -10,9 +10,9 @@
     <!-- Extension war -->
     <dependencySet>
       <useProjectArtifact>false</useProjectArtifact>
-      <outputDirectory></outputDirectory>
+      <outputDirectory>webapps</outputDirectory>      
       <includes>
-        <include>${project.groupId}:create-site-extension-war:war</include>
+        <include>${project.groupId}:site-creation-extension-war:war</include>
       </includes>
       <scope>provided</scope>
       <outputFileNameMapping>site-creation-extension.war</outputFileNameMapping>
@@ -20,9 +20,9 @@
     <!-- Libraries -->
     <dependencySet>
       <useProjectArtifact>false</useProjectArtifact>
-      <outputDirectory></outputDirectory>
+      <outputDirectory>lib</outputDirectory>
       <includes>
-        <include>${project.groupId}:create-site-extension-*:jar</include>
+        <include>${project.groupId}:site-creation-extension-*:jar</include>
       </includes>
       <scope>provided</scope>
       <outputFileNameMapping>${artifact.artifactId}-${artifact.baseVersion}.${artifact.extension}

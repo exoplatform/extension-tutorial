@@ -3,24 +3,24 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.exoplatform.archetype</groupId>
-    <artifactId>create-site-extension</artifactId>
+    <artifactId>site-creation-extension</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>create-site-extension-packaging-addon</artifactId>
+  <artifactId>site-creation-extension-packaging</artifactId>
   <packaging>pom</packaging>
-  <name>Create Site Extension Addon Packaging</name>
-  <description>Create Site Extension Addon Packaging</description>
+  <name>Site creation Extension Packaging</name>
+  <description>Site creation Extension Packaging</description>
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>create-site-extension-war</artifactId>
+      <artifactId>site-creation-extension-war</artifactId>
       <version>${project.version}</version>
       <type>war</type>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>create-site-extension-config</artifactId>
+      <artifactId>site-creation-extension-services</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
@@ -43,7 +43,7 @@
               <finalName>site-creation-extension</finalName>
               <appendAssemblyId>false</appendAssemblyId>
               <descriptors>
-                <descriptor>src/main/assemblies/site-creation-extension-addon.xml</descriptor>
+                <descriptor>src/main/assemblies/site-creation-extension-packaging.xml</descriptor>
               </descriptors>
             </configuration>
           </execution>

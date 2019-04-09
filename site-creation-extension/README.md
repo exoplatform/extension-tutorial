@@ -1,7 +1,7 @@
-## eXoPlatform Create site extension
+## eXoPlatform site creation extension
 
-This project is an eXoPlatform extension which creates a site called 'my-site' with some pages.
+This project is an eXoPlatform extension with configurations to create an new site.
 
 The corresponding maven archetype can be used with :
 
-    mvn archetype:generate -B -DarchetypeGroupId=org.exoplatform.archetype -DarchetypeArtifactId=create-site-extension-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=com.mycompany -DartifactId=myextension
+    mvn archetype:generate -B -DarchetypeGroupId=org.exoplatform.archetype -DarchetypeArtifactId=site-creation-extension-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=com.mycompany -DartifactId=myextension
